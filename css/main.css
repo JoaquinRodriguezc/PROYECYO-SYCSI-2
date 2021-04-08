@@ -1,0 +1,377 @@
+:root {
+  --sycsi: #ea5f12;
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Arial",sans-serif;
+  box-sizing:border-box;
+  scroll-behavior: smooth
+}
+li,a{
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+
+}
+body{
+  width: 100%;
+}
+.header-main-container{
+  width: 100%;
+  height:100vh;
+  background-image: url("../img/test.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content:center;
+  /* position: sticky;
+    top: 0; */
+    }
+ .header-logo{
+      width: 250px;
+      height:70px;
+      margin-right: 30px;
+      background-image: url("../img/sycsi.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+.header-navegacion{
+    width: 530px;
+    height:70px;
+    top: 10px;
+    margin-right: 10px;
+    padding: 0 0;
+    background-color:white;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.header-navegacion--menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header-navegacion--menu li{
+    /* border: 1px solid black; */
+      padding-top:24px;
+}
+.header-navegacion--menu a{
+  font-family: "Roboto",sans-serif;
+    font-size: 1em;
+    padding: 15px;
+    color: #8d8d8d;
+}
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+
+  background-color: var(--sycsi);
+
+
+}
+.hvr-fade a:hover, .hvr-fade a:focus, .hvr-fade a:active {
+    color: white;
+}
+main{
+    width: 100%;
+    height:auto;
+    display:block;
+    text-align: center;
+}
+.inicio--container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+.inicio-texto--container{
+      backdrop-filter:blur(5px);
+      width: 50%;
+      margin: 0 auto 150px;
+      border: 1px solid rgba(255,255,255, 0.5);
+      border-radius: 10px;
+}
+.inicio--container .texto{
+      font-family: "PT Sans Narrow",sans-serif;
+      color: white;
+      font-size: 1.6em;
+}
+/* ------------------ SECCION NOSOTROS------------------*/
+.nosotros--container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    background:url("../img/background-seccion-nosotros.jpg") no-repeat center;
+    background-size: cover;
+}
+.titulos--secciones{
+  font-family: "PT Sans Narrow",sans-serif;
+  font-weight:bold;
+  color: var(--sycsi);
+  font-size: 3em;
+}
+.nosotros-card{
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid var(--sycsi);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+.tarjeta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+.icon{
+  width: 70px;
+  height: 70px;
+}
+.mision{
+    background: url("../img/helmet.svg") no-repeat center;
+    background-size: cover;
+}
+.vision{
+    background: url("../img/growth.svg") no-repeat center;
+    background-size: cover;
+}
+
+.nosotros-card h3{
+  font-family: "PT Sans Narrow",sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+.nosotros-card p , .politica-card p{
+    font-family: "PT Sans Narrow",sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/*-----------------SECTION SERVICIO--------------*/
+
+.servicios--container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    width: 100%;
+    height: auto;
+    background:url("../img/seccion2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    padding: 10px;
+}
+
+.servicios-card{
+    width: 400px;
+    height: 350px;
+    text-align: left;
+    padding-left: 20px;
+    justify-content: flex-start;
+    overflow: auto;
+
+}
+.servicios-container--texto{
+      display: flex;
+      align-items:center;
+      justify-content:center;
+}
+
+.servicios-card ul{
+      align-self: flex-start;
+      list-style-position: inside;
+  }
+.servicios-card h3{
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.servicios-card li{
+    margin-bottom: 10px;
+    font-family: "Roboto",sans-serif;
+    color:white;
+}
+.servicios-card li:not(li>ul>li){
+        list-style-image: url("../img/right-arrow.svg");
+}
+.servicios-card li > ul > li {
+    text-indent: 10px;
+}
+.servicios-card li > ul > li > ul > li{
+    text-indent: 20px;
+}
+.servicios-card li > ul > li:first-of-type{
+    margin-top: 10px;
+}
+.especificos{
+    grid-row: 2 /4;
+    grid-column: 3;
+    height: auto;
+}
+/* ----------CLIENTES seccion -´--------------------*/
+
+.clientes--container{
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      padding-top: 30px;
+      background:url("../img/background-seccion-clientes.jpg") no-repeat center;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: darken;
+
+}
+
+.clientes--grilla{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items:center;
+}
+.cliente{
+    height: 100px;
+    width: 100px;
+}
+.clientes--container h2{
+    color:white;
+    margin-bottom: 20px;
+}
+.clientes--grilla .vale{
+  width: 116px;
+  height: 50px;
+  background: url("../img/Vale_logo.svg") no-repeat center;
+  background-size: cover;
+}
+.clientes--grilla .sodexo{
+  width: 180px;
+  height: 50px;
+  background: url("../img/sodexo.png") no-repeat center;
+  background-size: cover;
+}
+.clientes--grilla .iron{
+  width: 180px;
+  height: 35px;
+  background:  url("../img/logo-irongroup.png") no-repeat center;
+  background-size: cover;
+}
+.clientes--grilla .jumbo{
+  width: 150px;
+  height: 85px;
+  background:  url("../img/jumbo-logo-preload.png") no-repeat center;
+  background-size: cover;
+}
+.clientes--grilla .diesel{
+  width: 200px;
+  height: 40px;
+  background:  url("../img/logo_dieselService.svg") no-repeat center;
+  background-size: cover;
+}
+.clientes--grilla .della{
+  width: 170px;
+  height: 40px;
+  background:  url("../img/dellatoffola.png") no-repeat center;
+  background-size: cover;
+
+}
+.clientes--grilla .sancristobal{
+  width: 160px;
+  height: 50px;
+  background:  url("../img/san-cristobal-logo.svg") no-repeat center;
+  background-size: cover;
+}
+.clientes--grilla .g4s{
+  width: 100px;
+  height: 50px;
+  background:  url("../img/g4s-logo.png") no-repeat center;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.2);
+  background-blend-mode:darken;
+}
+.clientes--grilla .linde{
+  width: 100px;
+  height: 50px;
+  background:  url("../img/Linde_plc.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/*-------------POLITICA SECCION-------------------*/
+
+.politica--container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url("../img/background-seccion-politica.jpg") no-repeat center;
+    background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken; */
+
+}
+
+.politica-texto--container{
+  width: 50%;
+  margin: 20px auto;
+}
+.politica-texto--container h3{
+  background-color: rgba(0,0,0,0.4);
+  font-family: "PT Sans Narrow",sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: white;
+}
+.card--container{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    align-items: content:flex-start;
+    justify-items: center;
+}
+.politica-card{
+  width: 400px;
+  height: 130px;
+  padding: 5px;
+  backdrop-filter:blur(2px);
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+  text-align: left;
+  font-size: 0.9em;
+  align-items: flex-start;
+}
+.politica-card p{
+  color: white;
+  font-weight: 100;
+}
