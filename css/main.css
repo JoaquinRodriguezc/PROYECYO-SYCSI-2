@@ -104,15 +104,14 @@ header{
     bottom: 20px;
     right: 20px;
     z-index: 99;
-    background:url("../img/up-arrow.svg");
+    background: white url("../img/up-arrow.svg");
     background-position: center;
     background-position:no-repeat;
     background-size: cover;
-    border: none;
+    border: 3px solid white;
     outline: none;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
+    border-radius: 100%;
 }
 /* MAIN Y SECCIONES */
 main{
