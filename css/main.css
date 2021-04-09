@@ -417,19 +417,25 @@ main{
     margin: 15px 0;
 }
 .icon-linkedin{
-    width:30px;
-    height:30px;
-    background-image: url("../img/linkedin.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    display: inline-block;
+     width: 50px;
+     height:50px;
+     margin-left: 10px;
+     background: url("../img/linkedin.svg") no-repeat center;
+     background-size: cover;
+     vertical-align: middle;
+     cursor: pointer;
 }
 .icon-facebook{
-    width: 16px;
-    height:16px;
-    background-color: black;
-    background: black url("../img/facebook.svg") no-repeat center;
+    display: inline-block;
+    width: 50px;
+    height:50px;
+    margin-left: 10px;
+    background: url("../img/facebook.svg") no-repeat center;
     background-size: cover;
+    vertical-align: middle;
+    cursor: pointer;
 }
 .contacto-mapa--container{
     margin: 10px;
