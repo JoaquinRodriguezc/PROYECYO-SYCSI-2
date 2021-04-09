@@ -94,6 +94,27 @@ header{
 .hvr-fade a:hover, .hvr-fade a:focus, .hvr-fade a:active {
     color: white;
 }
+/*----------BOTON-------------------------------*/
+
+#miBoton{
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background:url("../img/up-arrow.svg");
+    background-position: center;
+    background-position:no-repeat;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+/* MAIN Y SECCIONES */
 main{
     width: 100%;
     height:auto;

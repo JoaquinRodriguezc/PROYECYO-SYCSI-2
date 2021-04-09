@@ -8,12 +8,33 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" type="image/png" href="img/icon-sycsi.png" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
+	<!-- BOTON PORA VOLVER ARIBA -->
+	<button onclick="topFunction()" id="miBoton" title= "Volver arriba"></button>
+	<script>
+			var miBoton = document.getElementById("miBoton");
+			window.onscroll = function(){scrollFunction()};
+
+			function scrollFunction(){
+					if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+						miBoton.style.display ="block";
+					}else{
+						miBoton.style.display="none";
+					}
+			}
+			function topFunction(){
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop=0;
+			}
+	</script>
+
 	<div class="header-main-container">
 	<header id="inicio">
 		<div class="header-logo">
@@ -210,7 +231,7 @@
 
 			</div> <!--fin card-container-->
 		</section>
-		<section <id class="contato" class="contacto--container">
+		<section id="contacto" class="contacto--container">
 
 					<h2 class="titulos--secciones titulo-contacto">CONTACTANOS</h2>
 
