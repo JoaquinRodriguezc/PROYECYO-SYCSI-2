@@ -1,0 +1,53 @@
+@media only screen and (min-width:712px) and (max-width: 790px) {
+
+  .logo{
+
+       min-width: 150px;
+       min-height:40px;
+       margin-right: 15px;
+       background-image: url("../img/sycsi.png");
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+ }
+.header-navegacion--menu{
+     min-width: 400px;
+     top: 10px;
+     margin-right: 10px;
+ }
+}
+@media only screen and (max-width:712px){
+   .header-navegacion--menu{
+      height: 32px;
+  }
+  .header-navegacion--menu a{
+      display: none;
+
+  }
+ .header-navegacion--menu .icon{
+      display:block;
+      cursor: pointer;
+  }
+  @media only screen and (max-width:712px){
+
+    .header-navegacion--menu.responsive{
+          position: relative;
+    }
+
+    .header-navegacion--menu.responsive a{
+        display: block;
+        font-size:1.2em;
+    }
+    .header--container.responsive{
+        flex-direction: column;
+    }
+    .header-navegacion--menu.responsive{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 300px;
+        background-color: white;
+    }
+
+  }
