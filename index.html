@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>SYCSI Consultora Laboral</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Seguridad e Higiene en Servicios Industriales">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/responsive.css">
 	<link rel="icon" type="image/png" href="img/icon-sycsi.png" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -32,22 +33,40 @@
 			function topFunction(){
 					document.body.scrollTop = 0;
 					document.documentElement.scrollTop=0;
+				}
+			function abrirMenu() {
+  			var x = document.getElementById("miNav");
+				var y = document.getElementById("inicio")
+  			if (x.className === "header-navegacion--menu") {
+    		x.className += " responsive";
+				console.log("HOLS");
+  			}else{
+  			 x.className = "header-navegacion--menu";
+			 }
+			if (y.className === "header--container") {
+			y.className += " responsive";
+			console.log("HOLS");
+			}else{
+			 y.className = "header--container";
 			}
+		}
 	</script>
 
 	<div class="header-main-container">
-	<header id="inicio">
+	<header class="header--container"id="inicio">
 		<div class="logo header-logo">
 		</div>
-		<nav class="header-navegacion">
-			<ul class="header-navegacion--menu">
-				<li class="hvr-fade"><a href="#inicio">Inicio</a></li>
-				<li class="hvr-fade"><a href="#nosotros">Nosotros</a></li>
-				<li class="hvr-fade"><a href="#servicios">Servicios</a></li>
-				<li class="hvr-fade"><a href="#clientes">Clientes</a></li>
-				<li class="hvr-fade"><a href="#politica">Política</a></li>
-				<li class="hvr-fade"><a href="#contacto">Contacto</a></li>
-			</ul>
+		<nav class="header-navegacion--menu" id="miNav">
+				<a href="javascript:void(0);" class="icon" onclick="abrirMenu()">
+						<i class="icon-top"></i>
+				</a>
+				<a href="#inicio">Inicio</a>
+				<a href="#nosotros">Nosotros</a>
+				<a href="#servicios">Servicios</a>
+				<a href="#clientes">Clientes</a>
+				<a href="#politica">Política</a>
+				<a href="#contacto">Contacto</a>
+
 		</nav>
 	</header>
 	<main>
