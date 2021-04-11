@@ -17,9 +17,9 @@
         line-height: 1.2em;
     }
       /*SERVICIOS*/
-  .servicios-cards--container{
-        display: flex;
-        flex-direction: column;
+  .servicios-card{
+
+        grid-column: span 4;
     }
         /*CONTACTO*/
   .contacto-informacion--container,
