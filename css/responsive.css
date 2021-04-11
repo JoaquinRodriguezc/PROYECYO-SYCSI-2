@@ -1,3 +1,29 @@
+@media only screen and (max-width: 1018px) {
+
+      .nosotros--container{
+        display: flex;
+        flex-direction: column;
+      }
+      .titulos--secciones{
+        font-size: 2.5em;
+      }
+      .nosotros-card h3{
+        font-size: 2em;
+      }
+      .nosotros-card p , .politica-card p{
+          font-size: 1em;
+          line-height: 1.2em;
+      }
+      /*SERVICIOS*/
+
+        .servicios-cards--container{
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+}
 @media only screen and (min-width:712px) and (max-width: 790px) {
 
   .logo{
@@ -36,7 +62,7 @@
 
     .header-navegacion--menu.responsive a{
         display: block;
-        font-size:1.2em;
+        font-size:2em;
     }
     .header--container.responsive{
         flex-direction: column;
@@ -46,8 +72,23 @@
         flex-direction:column;
         flex-wrap: nowrap;
         width: 100%;
-        height: 300px;
+        height: 100vh;
         background-color: white;
     }
 
   }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {}
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {}
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {}
