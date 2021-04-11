@@ -89,9 +89,9 @@ body{
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
 }
- .header-navegacion--menu a:hover,
- .header-navegacion--menu a:focus,
- .header-navegacion--menu a:active {
+ .color-efect:hover,
+ .color-efect:focus,
+ .color-efect:active {
 
   background-color: var(--sycsi);
   color: white;
