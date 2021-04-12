@@ -418,7 +418,7 @@ main{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto;
-    align-items: content:flex-start;
+    align-items:flex-start;
     justify-items: center;
     padding-bottom: 20px;
 }
@@ -518,5 +518,5 @@ main{
 .footer-logo{filter: grayscale(50%);}
 .footer-logo-texto--container p{
     color: white;
-    font;font-family: "ROBOTO",sans-serif;
+    font-family: "ROBOTO",sans-serif;
 }
