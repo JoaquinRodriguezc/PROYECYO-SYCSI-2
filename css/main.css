@@ -10,35 +10,36 @@
   box-sizing:border-box;
   scroll-behavior: smooth
 }
+p{
+  font-family: "Roboto",sans-serif;
+}
 li,a{
   text-decoration: none;
   text-decoration-style: none;
   list-style: none;
 
 }
-
+h2,h3{
+  font-family: "PT Sans Narrow",sans-serif;
+}
 body{
+   
     min-width: 320px;
     width: 100%;
     display: block
 }
-.header-main-container{
-  position: relative;
-  width: 100%;
-  height:100vh;
-  background-image: url("../img/background-seccion-inicio.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-   background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: darken;
-}
+
+/*------HEADER*/
 .header--container{
+    position: sticky;
+    top: 0;
     display: flex;
     width: 100%;
     min-height: 80px;
     align-items: center;
     justify-content:center;
+    background-color: white;
+
     }
  .logo{
       width: 250px;
@@ -60,6 +61,7 @@ body{
   background-color:white;
   border: 2px solid white;
   border-radius: 4px;
+  /*ver*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -120,7 +122,7 @@ body{
 }
 /* MAIN Y SECCIONES */
 main{
-    position: absolute;
+   
     top:80px;
     min-width: 320px;
     width: 100%;
@@ -136,35 +138,50 @@ main{
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      min-height: 90vh;
+      background-color: var(--sycsi);
 }
 .inicio-texto--container{
-      backdrop-filter:blur(5px);
       min-width:280px;
+      max-width: 700px;
       margin: 0 auto 150px;
-      border: 1px solid rgba(255,255,255, 0.01);
-      border-radius: 10px;
 }
 .inicio--container .texto{
 
       font-family: "PT Sans Narrow",sans-serif;
-      color: white;
+      color:white;
       font-size: 1.6em;
 }
 /* ------------------ SECCION NOSOTROS------------------*/
 .nosotros--container{
     width: 90%;
-    display: grid;
+    min-height: 80vh;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(4,auto);
     margin: 0 auto;
     padding-top: 30px;
+    text-align: start;
+}
+.nosotros--separador{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100px;
+    background-color: #ea5f12;
+}
+.nosotros--separador h2{
+  margin-left: 5%;
+  font-family: "PT Sans Narrow",sans-serif;
+  color: white;
+
 }
 .nosotros-titulo{
-    grid-column: 1 /span 4;
+  margin-left: 20px;
+
 }
 .nosotros--imagen{
-    grid-column: 2 /span 4;
+    float:right;
     width: 500px;
     height: 325px;
     background-image: url("../img/imagen1-nosotros.jpg");
@@ -172,17 +189,61 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .nosotros--texto{
-    grid-row: 2 / span 3;
-    justify-self: start;
+  width: 50%;
+}
+.nosotros--texto p{
+        margin: 20px;
+        font-size: 16px;
+        line-height: 1.66em;
+        color: #777777;
+}
+.misionvision--container{
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #ea5f12;
+}
+.misionvision--texto{
+      max-width: 50%;
+      padding: 10px;
+      text-align: start;
+}
+.misionvision--texto h2{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 2.6em;
+}
+.misionvision--texto h3{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.5em;
 }
 
+.misionvision--texto p{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.66em;
+}
+
+
+
+
+
+
+
+.titulo-nosotros{
+  font-family: "PT Sans Narrow",sans-serif;
+  font-size: 2em;
+  color: var(--sycsi);
+}
 .titulos--secciones{
   font-family: "PT Sans Narrow",sans-serif;
   font-weight:bold;
   color: var(--sycsi);
-  font-size: 3em;
+  font-size: 2em;
 }
 .nosotros-card{
     min-width: 280px;
@@ -234,12 +295,12 @@ main{
 .servicios--container{
   width: 100%;
   height: auto;
-    background:url("../img/seccion2.jpg");
+    /*background:url("../img/seccion2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
+    background-blend-mode: darken; */
     padding: 10px;
 }
 .servicio-cards--container{
@@ -258,9 +319,9 @@ main{
     padding-left: 20px;
     justify-content: flex-start;
     overflow: auto;
-    background: rgba(0, 0, 0, 0.5);
+    /*background: rgba(0, 0, 0, 0.5);
     border: 1px solid  rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 .servicios-container--texto{
       display: flex;
@@ -276,12 +337,12 @@ main{
 .servicios-card h3{
     font-family: "Roboto",sans-serif;
     font-weight: bold;
-    color: white;
+    color:#777777;
 }
 .servicios-card li{
     margin-bottom: 10px;
     font-family: "Roboto",sans-serif;
-    color:white;
+    color:#777777;
 }
 .servicios-card li:not(li>ul>li){
         list-style-image: url("../img/right-arrow.svg");
@@ -390,29 +451,24 @@ main{
 /*-------------POLITICA SECCION-------------------*/
 
 .politica--container{
-    width: 100%;
+    width: 90%;
     height: 100%;
-    text-align: center;
-    background: url("../img/background-seccion-politica.jpg") no-repeat center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: darken;
-
+    text-align: start;
+    margin: 0 auto;
 }
-
 .politica-texto--container{
   min-width: 280px;
-  max-width: 60%;
-  margin: 20px auto;
-  margin: 10px auto;
-  backdrop-filter:blur(10px);
+  max-width: 100%; 
+  margin: 20px 0;
+}
+.titulo-politica{
+    margin:20px 0;
 }
 .politica-texto--container h3{
-
-  font-family: "PT Sans Narrow",sans-serif;
+  font-family: "Roboto",sans-serif;
   font-weight: 500;
-  font-size: 1.5em;
-  color: white;
+  font-size: 1em;
+  color: #777777;
 }
 .politica-card--container{
     width: 100%;
@@ -430,39 +486,40 @@ main{
   height: auto;
   max-height:130px;
   padding: 5px;
-  backdrop-filter:blur(2px);
-  background-color: rgba(0,0,0,0.6);
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
   text-align: left;
   font-size: 0.9em;
   align-items: flex-start;
 }
 .politica-card p{
-  color: white;
-  font-weight: 100;
-  font-style: italic;
+  color: #777777;
+  font-weight: 500;
+  
 }
 /*--------------------CONTACTO CONTAINER----------------*/
+.contacto--container-bg{
+  width: 100%;
+  background-color:var(--sycsi);
+}
+
 .contacto--container{
-    width: 100%;
-    min-height: 100vh;
+    width: 90%;
+    min-height: 400px;
+    margin:0 auto;
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
     align-items: center;
-    background-image:url("../img/background-seccion-contacto.png");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0,0,0,0.5);
-    background-blend-mode: darken;
+   
 }
-.titulo-contacto{grid-column: 1/ span 2;}
+.titulo-contacto{
+  grid-column: 1/ span 2;
+  color: white;
+}
 .contacto-informacion--container p{
     font-family: "PT Sans Narrow",sans-serif;
     font-size: 1.5em;
     margin: 15px 0;
-    color: white;
+    color:white;
 }
 .icon-linkedin{
     display: inline-block;
@@ -486,8 +543,8 @@ main{
 }
 .contacto-mapa--container{
       position: relative;
-      width: 100%;
-      height: 100%;
+      width: 70%;
+      height: 70%;
       padding-top: 56.25%;
       margin: 15px;
     }
@@ -503,22 +560,17 @@ main{
 /*--------FOOTER--------------------*/
 
 .footer--container{
+  display: flex;
   width: 100%;
-  height: 120px;
-  background-color: black;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-items:center;
+  height: 80px;
+  justify-content: center;
   align-items: center;
+  background-color: black;
 }
-.footer-navegacion li{
-      display: inline;
-      margin-left: 10px;
+.footer-logo{
+  filter: grayscale(50%);
 }
-.footer-navegacion a{color:white;}
-.footer--container{text-align: center;}
-.footer-logo{filter: grayscale(50%);}
-.footer-logo-texto--container p{
+.footer--container p{
     color: white;
     font-family: "ROBOTO",sans-serif;
 }
