@@ -26,7 +26,7 @@ body{
    
     min-width: 320px;
     width: 100%;
-    display: block
+    display: block;
 }
 
 /*------HEADER*/
@@ -39,7 +39,7 @@ body{
     align-items: center;
     justify-content:center;
     background-color: white;
-
+    z-index: 5;
     }
  .logo{
       width: 250px;
@@ -134,17 +134,29 @@ main{
 /*----------SECCION INICIO------------------------*/
 
 .inicio--container{
-
+  position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 90vh;
-      background-color: var(--sycsi);
+     background-image: url("../img/inicio.jpg");
+     background-position: center;
+     background-size: cover;
+}
+.gradiente{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-image:  linear-gradient(
+    to top,rgb(234, 95, 18,1),
+    rgba(234, 95, 18,0.5));
+      
 }
 .inicio-texto--container{
       min-width:280px;
       max-width: 700px;
       margin: 0 auto 150px;
+      z-index: 1;
 }
 .inicio--container .texto{
 
@@ -162,15 +174,15 @@ main{
     padding-top: 30px;
     text-align: start;
 }
-.nosotros--separador{
+.separador--secciones{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
     height: 100px;
-    background-color: #ea5f12;
+    background-image: linear-gradient(100deg, #fe9f2f 0, #fc8f28 16.67%, #f57a1e 33.33%, #ea5f11 50%, #de4107 66.67%, #d61c0a 83.33%, #d00012 100%);
 }
-.nosotros--separador h2{
+.separador--secciones h2{
   margin-left: 5%;
   font-family: "PT Sans Narrow",sans-serif;
   color: white;
@@ -199,16 +211,31 @@ main{
         color: #777777;
 }
 .misionvision--container{
+        position: relative;
         width: 100%;
         min-height: 50vh;
         display: flex;
         justify-content: flex-end;
-        background-color: #ea5f12;
+        background:url("../img/background-seccion-nosotros.jpg");
+        background-size: cover;
+        background-position: center;
+}
+.colorgradient{
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      background-image:linear-gradient(
+        to left,
+        rgb(234, 95, 18,1), 
+        rgb(234, 95, 18,1),
+        rgb(234, 95, 18,0.5),
+        rgba(234, 95, 18,0.5));
 }
 .misionvision--texto{
       max-width: 50%;
       padding: 10px;
       text-align: start;
+      z-index: 4;
 }
 .misionvision--texto h2{
   color: white;
@@ -265,19 +292,6 @@ main{
 
 
 }
-.icon{
-  min-width: 40px;
-  min-height: 40px;
-
-}
-.mision{
-    background: url("../img/helmet.svg") no-repeat center;
-    background-size: cover;
-}
-.vision{
-    background: url("../img/growth.svg") no-repeat center;
-    background-size: cover;
-}
 
 .nosotros-card h3{
   font-family: "PT Sans Narrow",sans-serif;
@@ -293,15 +307,15 @@ main{
 /*-----------------SECTION SERVICIO--------------*/
 
 .servicios--container{
-  width: 100%;
-  height: auto;
-    /*background:url("../img/seccion2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken; */
+     width: 90%;
+     min-height: auto;
+     margin: 0 auto;
     padding: 10px;
+
+}
+.servicio--titulo{
+    color: white;
+
 }
 .servicio-cards--container{
   display: grid;
@@ -310,6 +324,7 @@ main{
   justify-items: flex-start;
   align-items: flex-start;
   height: auto;
+  margin-top: 50px;
 
 }
 .servicios-card{
@@ -322,12 +337,6 @@ main{
     /*background: rgba(0, 0, 0, 0.5);
     border: 1px solid  rgba(0, 0, 0, 0.5);
     border-radius: 5px; */
-}
-.servicios-container--texto{
-      display: flex;
-      align-items:center;
-      justify-content:center;
-      margin:10px;
 }
 
 .servicios-card ul{
@@ -368,11 +377,11 @@ main{
       min-height: 100vh;
       height: 100%;
       text-align: center;
-      padding-top: 30px;
-      background:url("../img/background-seccion-clientes.jpg") no-repeat center;
+      padding-top: 10px;
+     /* background:url("../img/background-seccion-clientes.jpg") no-repeat center;
       background-size: cover;
       background-color: rgba(0, 0, 0, 0.5);
-      background-blend-mode: darken;
+      background-blend-mode: darken;*/
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -393,7 +402,7 @@ main{
     grid-column: span 2;
 }
 .clientes--container h2{
-    color:white;
+    color:var(--sycsi);
     margin-bottom: 20px;
 }
 .clientes--grilla .vale{
@@ -560,6 +569,7 @@ main{
 /*--------FOOTER--------------------*/
 
 .footer--container{
+ 
   display: flex;
   width: 100%;
   height: 80px;
