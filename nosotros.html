@@ -14,6 +14,40 @@
     <title></title>
   </head>
   <body>
+    	<!-- BOTON PORA VOLVER ARIBA -->
+	<button onclick="topFunction()" id="miBoton" title= "Volver arriba"></button>
+	<script>
+			var miBoton = document.getElementById("miBoton");
+			window.onscroll = function(){scrollFunction()};
+
+			function scrollFunction(){
+					if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+						miBoton.style.display ="block";
+					}else{
+						miBoton.style.display="none";
+					}
+			}
+			function topFunction(){
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop=0;
+				}
+			function abrirMenu() {
+  			var x = document.getElementById("miNav");
+				var y = document.getElementById("inicio")
+  			if (x.className === "header-navegacion--menu") {
+    		x.className += " responsive";
+				console.log("HOLS");
+  			}else{
+  			 x.className = "header-navegacion--menu";
+			 }
+			if (y.className === "header--container") {
+			y.className += " responsive";
+			console.log("HOLS");
+			}else{
+			 y.className = "header--container";
+		}
+		}
+	</script>
     <header class="header--container"id="inicio">
       <div class="logo header-logo">
       </div>
@@ -27,7 +61,7 @@
           <a class="color-efect" href="servicios.html">Servicios</a>
           <a class="color-efect" href="#clientes">Clientes</a>
           <a class="color-efect" href="#politica">Política</a>
-          <a class="color-efect" href="contacto.html">Contacto</a>
+          <a class="color-efect" href="#contacto">Contacto</a>
 
       </nav>
       
@@ -37,22 +71,23 @@
         <h2>SYCSI CONSULTORA LABORAL</h2>
       </div>
        <section id="nosotros"class="nosotros--container">
-        
+        <article class="nosotros--texto">
+          <div class="nosotros-titulo">
+            <h2 class="titulo-nosotros">NOSOTROS</h2>
+         </div>
+             <p>  SYCSI CONSULTORA LABORAL es una empresa fundada para realizar servicios de asesoramiento en
+              Higiene y Seguridad Laboral, Medio Ambiente y Sostenibilidad. </p>
+             <p>Desde el año 2006, SYCSI Consultora Laboral asesora en HSE y realiza
+  mantenimientos de equipos y dispositivos de prevención, en empresas del
+  medio, acompañando a nuestros clientes en el desarrollo eficiente de sus
+  procesos y servicios. </p>
+            <p>La extensa trayectoria en la industria de Oil & Gas y Minería, han
+  permitido incursionar en los más altos estándares de prevención
+  orientados a los cambios de Clima y Cultura de Seguridad Organizacional.</p>
+          </article>
         <div class="nosotros--imagen"></div>
-        <div class="nosotros-titulo">
-  	    	<h2 class="titulo-nosotros">NOSOTROS</h2>
-       </div>
-  		<article class="nosotros--texto">
-           <p>  SYCSI CONSULTORA LABORAL es una empresa fundada para realizar servicios de asesoramiento en
-            Higiene y Seguridad Laboral, Medio Ambiente y Sostenibilidad. </p>
-           <p>Desde el año 2006, SYCSI Consultora Laboral asesora en HSE y realiza
-mantenimientos de equipos y dispositivos de prevención, en empresas del
-medio, acompañando a nuestros clientes en el desarrollo eficiente de sus
-procesos y servicios. </p>
-          <p>La extensa trayectoria en la industria de Oil & Gas y Minería, han
-permitido incursionar en los más altos estándares de prevención
-orientados a los cambios de Clima y Cultura de Seguridad Organizacional.</p>
-  			</article>
+    
+  		
   	</section>
     <section class="misionvision--container">
       <div class="colorgradient"></div>

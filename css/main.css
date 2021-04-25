@@ -166,6 +166,7 @@ main{
 }
 /* ------------------ SECCION NOSOTROS------------------*/
 .nosotros--container{
+  display: flex;
     width: 90%;
     min-height: 80vh;
     grid-template-columns: 50% 50%;
@@ -173,6 +174,7 @@ main{
     margin: 0 auto;
     padding-top: 30px;
     text-align: start;
+    justify-content: center;
 }
 .separador--secciones{
     display: flex;
@@ -193,8 +195,7 @@ main{
 
 }
 .nosotros--imagen{
-    float:right;
-    width: 500px;
+    width: 470px;
     height: 325px;
     background-image: url("../img/imagen1-nosotros.jpg");
     background-position: center;

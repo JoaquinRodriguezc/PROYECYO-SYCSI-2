@@ -1,15 +1,12 @@
 @media only screen and (max-width:820px) {
-  /*SERVICIOS POLITICA-------------------*/
+  /*POLITICA-------------------*/
   .politica-card{grid-column:span 3;}
   .politica-card p{font-size: 1.3em;}
   .politica-texto--container{font-size: 1.3em;}
 }
 @media only screen and (max-width: 1024px) {
-
-  .nosotros--container{
-        display: flex;
-        flex-direction: column;
-  }
+  
+  
   .titulos--secciones{font-size: 2.5em;}
   .nosotros-card h3{font-size: 2em;}
   .nosotros-card p{
@@ -52,8 +49,16 @@
       display:block;
       cursor: pointer;
    }
+   .nosotros--texto{
+    width: 100%;
+  }
 }
 @media only screen and (max-width:712px){
+  .nosotros--container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
     .header-navegacion--menu.responsive{
       position: relative;
       z-index: 4;
@@ -77,6 +82,15 @@
     /*SERVICIOS CLIENTES-------------------*/
     .clientes--grilla{grid-gap: 20px;}
     .cliente{grid-column: span 4;
+    }
+
+}
+@media only screen  and (max-width:500px){
+  
+    .nosotros--imagen{
+        width: 300px;
+        height: 200px;
+        align-self: center;
     }
 
 }
