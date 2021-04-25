@@ -1,87 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>SYCSI Consultora Laboral</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Seguridad e Higiene en Servicios Industriales">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" media="screen" type="text/css" href="css/responsive.css">
-	<link rel="icon" type="image/png" href="img/icon-sycsi.png" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/responsive.css">
+    <link rel="icon" type="image/png" href="img/icon-sycsi.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 
-
+    <title></title>
 </head>
-
 <body>
-	<!-- BOTON PORA VOLVER ARIBA -->
-	<button onclick="topFunction()" id="miBoton" title= "Volver arriba"></button>
-	<script>
-			var miBoton = document.getElementById("miBoton");
-			window.onscroll = function(){scrollFunction()};
-
-			function scrollFunction(){
-					if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-						miBoton.style.display ="block";
-					}else{
-						miBoton.style.display="none";
-					}
-			}
-			function topFunction(){
-					document.body.scrollTop = 0;
-					document.documentElement.scrollTop=0;
+		<!-- BOTON PORA VOLVER ARIBA -->
+		<button onclick="topFunction()" id="miBoton" title= "Volver arriba"></button>
+		<script>
+				var miBoton = document.getElementById("miBoton");
+				window.onscroll = function(){scrollFunction()};
+	
+				function scrollFunction(){
+						if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+							miBoton.style.display ="block";
+						}else{
+							miBoton.style.display="none";
+						}
 				}
-			function abrirMenu() {
-  			var x = document.getElementById("miNav");
-				var y = document.getElementById("inicio")
-  			if (x.className === "header-navegacion--menu") {
-    		x.className += " responsive";
+				function topFunction(){
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop=0;
+					}
+				function abrirMenu() {
+				  var x = document.getElementById("miNav");
+					var y = document.getElementById("inicio")
+				  if (x.className === "header-navegacion--menu") {
+				x.className += " responsive";
+					console.log("HOLS");
+				  }else{
+				   x.className = "header-navegacion--menu";
+				 }
+				if (y.className === "header--container") {
+				y.className += " responsive";
 				console.log("HOLS");
-  			}else{
-  			 x.className = "header-navegacion--menu";
-			 }
-			if (y.className === "header--container") {
-			y.className += " responsive";
-			console.log("HOLS");
-			}else{
-			 y.className = "header--container";
-		}
-		}
-	</script>
-	<header class="header--container"id="inicio">
-		<div class="logo header-logo">
-		</div>
-		<nav class="header-navegacion--menu" id="miNav">
-				<a href="javascript:void(0);" class="icon" onclick="abrirMenu()">
-						<i class="icon-top"></i>
-				</a>
-				<a class="color-efect" href="index.html">Inicio</a>
-				<a class="color-efect" href="nosotros.html">Nosotros</a>
-				<a class="color-efect" href="servicios.html">Servicios</a>
-				<a class="color-efect" href="#clientes">Clientes</a>
-				<a class="color-efect" href="nosotros.html#politica">Política</a>
-				<a class="color-efect" href="#contacto">Contacto</a>
+				}else{
+				 y.className = "header--container";
+			}
+			}
+		</script>
+    <header class="header--container"id="inicio">
+        <div class="logo header-logo">
+        </div>
+   
+        <nav class="header-navegacion--menu" id="miNav">
+            <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">
+                <i class="icon-top"></i>
+            </a>
+            <a class="color-efect" href="index.html">Inicio</a>
+            <a class="color-efect" href="nosotros.html">Nosotros</a>
+            <a class="color-efect" href="#servicios">Servicios</a>
+            <a class="color-efect" href="#clientes">Clientes</a>
+            <a class="color-efect" href="nosotros.html#politica">Política</a>
+            <a class="color-efect" href="#contacto">Contacto</a>
+  
+        </nav>
+        
+      </header>
+      <main>
+          <div class="separador--secciones">
+			    <h2>NUESTROS SERVICIOS</h2>
 
-		</nav>
-	</header>
-	<main>
-		<section class="inicio--container">
-			<div class="gradiente"></div>
-					<div class="inicio-texto--container">
-						 <p class="texto">
-							SyCSI Consultora Laboral asesora y realiza trabajos relacionados con la prevención en empresas del medio, acompañando  a nuestros clientes en el desarrollo eficiente de sus procesos y servicios.
-					  </p>
-			</div>
-
-
-		</section>
-	<section id="servicios"class="servicios--container">
-		<div class="servicios-container--texto">
-			<h2	class="titulos--secciones">NUESTROS SERVICIOS</h2>
-		</div>
+            </div>
+      <section id="servicios"class="servicios--container">
+    
+		
 		<div class="servicio-cards--container">
 		<article class="tarjeta servicios-card hys">
 			<h3>DE HIGIENE Y SEGURIDAD</h3> <span class=""></span>
@@ -205,23 +197,7 @@
 					
 			 </ul>
 		</article>
-		</section>
-			<div class ="separador--secciones">
-				<h2>ALGUNOS DE NUESTROS CLIENTES</h2>
-			</div>
-		<section id="clientes" class="clientes--container">
-				<h2 class="titulos--secciones"></h2>
-				<div class="clientes--grilla">
-					<div class="cliente vale"></div>
-					<div class="cliente iron"></div>
-					<div class="cliente jumbo"></div>
-					<div class="cliente diesel"></div>
-					<div class="cliente della"></div>
-					<div class="cliente sodexo"></div>
-					<div class="cliente g4s"></div>
-					<div class="cliente linde"></div>
-				</div>
-
+    </div>
 		</section>
 		<section id="contacto" class="contacto--container-bg">
 			<div class="contacto--container">
@@ -238,12 +214,13 @@
 			</div>
 		  </div>
 	  </section>
-	
 	</main>
 	<footer class="footer--container">
 		<div class="logo footer-logo"></div>
 		<p>Seguridad y Calidad <br>
 		en Servicios Industriales</p>
 	</footer>
+
+ 
 </body>
 </html>
