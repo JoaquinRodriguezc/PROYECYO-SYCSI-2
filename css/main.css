@@ -139,18 +139,14 @@ main{
       align-items: center;
       justify-content: center;
       min-height: 90vh;
-     background-image: url("../img/inicio.jpg");
-     background-position: center;
-     background-size: cover;
+     
 }
 .gradiente{
     position: absolute;
     width: 100%;
     height:100%;
-    background-image:  linear-gradient(
-    to top,rgb(234, 95, 18,1),
-    rgba(234, 95, 18,0.5));
-      
+    background-image: linear-gradient(to bottom
+    , #fe9f2f 0, #fc8f28 16.67%, #f57a1e 33.33%, #ea5f11 50%, #de4107 66.67%, #d61c0a 83.33%, #d00012 100%);
 }
 .inicio-texto--container{
       min-width:280px;
