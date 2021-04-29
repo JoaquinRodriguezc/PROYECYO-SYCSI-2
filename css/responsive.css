@@ -57,29 +57,34 @@
   }
 }
 @media only screen and (max-width:712px){
-  .nosotros--container{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-}
-    .header-navegacion--menu.responsive{
-      position: relative;
-      z-index: 4;
+      .nosotros--container{
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 30px;
+      }
+  
+    
+    .header-navegacion--menu.responsive .icon{
+      position: absolute;
+      top: -50px;
+      right: 20px;
     }
     .header-navegacion--menu.responsive a{
         display: block;
         font-size:1.3em;
     }
-    .header--container.responsive{flex-direction: column;}
+   
     .header-navegacion--menu.responsive{
+        position: absolute;
+        top: 70px;
         display: flex;
         flex-direction:column;
         flex-wrap: nowrap;
         width: 100%;
-        height: auto;
-        max-height: 90vh;
-        background-color: white;
         margin-right: 0;
+        height: auto;
+        background-color: white;
+        
     }
 
     /*SERVICIOS CLIENTES-------------------*/

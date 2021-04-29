@@ -23,10 +23,10 @@ h2,h3{
   font-family: "PT Sans Narrow",sans-serif;
 }
 body{
-   
     min-width: 320px;
     width: 100%;
     display: block;
+    position: relative;
 }
 
 /*------HEADER*/
@@ -52,7 +52,9 @@ body{
 }
 
 .header-navegacion--menu{
-  max-width: 530px;
+  display: flex;
+  align-items: center;
+  
   min-height:32px;
   height: 70px;
   top: 10px;
@@ -63,8 +65,7 @@ body{
   border-radius: 4px;
   /*ver*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
+  
 }
 .header-navegacion--menu .icon{
   display: none;
