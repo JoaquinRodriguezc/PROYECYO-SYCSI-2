@@ -15,8 +15,11 @@
     }
       /*SERVICIOS*/
   .servicios-card{
-
-        grid-column: span 4;
+        flex-direction: column;
+    }
+    .tarjeta--imagen{
+        width: 100%;
+        padding: 20px 0;
     }
         /*CONTACTO*/
   .contacto-informacion--container,
