@@ -12,45 +12,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-
+	<script type="text/javascript" src="menu.js"></script>
 
 </head>
 
 <body>
 	<!-- BOTON PORA VOLVER ARIBA -->
 	<button onclick="topFunction()" id="miBoton" title= "Volver arriba"></button>
-	<script>
-			var miBoton = document.getElementById("miBoton");
-			window.onscroll = function(){scrollFunction()};
 
-			function scrollFunction(){
-					if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-						miBoton.style.display ="block";
-					}else{
-						miBoton.style.display="none";
-					}
-			}
-			function topFunction(){
-					document.body.scrollTop = 0;
-					document.documentElement.scrollTop=0;
-				}
-			function abrirMenu() {
-  			var x = document.getElementById("miNav");
-				var y = document.getElementById("inicio")
-  			if (x.className === "header-navegacion--menu") {
-    		x.className += " responsive";
-				console.log("HOLS");
-  			}else{
-  			 x.className = "header-navegacion--menu";
-			 }
-			if (y.className === "header--container") {
-			y.className += " responsive";
-			console.log("HOLS");
-			}else{
-			 y.className = "header--container";
-		}
-		}
-	</script>
 	<header class="header--container"id="inicio">
 		<div class="logo header-logo">
 		</div>
