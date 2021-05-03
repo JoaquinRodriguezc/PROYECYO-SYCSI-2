@@ -71,16 +71,21 @@ body {
     border-radius: 4px;
     /*ver*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
-.header-navegacion--menu .icon {
-    display: none;
+.btn-nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
     width: 32px;
     height: 32px;
     background: url("../img/menu-icon.svg");
     background-position: center;
     background-position: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .header-navegacion--menu a {

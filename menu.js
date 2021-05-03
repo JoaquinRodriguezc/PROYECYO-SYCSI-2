@@ -1,28 +1,33 @@
-var miBoton = document.getElementById("miBoton");
-window.onscroll = function(){scrollFunction()};
+'use strict'
 
-function scrollFunction(){
-        if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-            miBoton.style.display ="block";
-        }else{
-            miBoton.style.display="none";
-        }
-}
-function topFunction(){
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop=0;
+let miBoton = document.getElementById("miBoton");
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        miBoton.style.display = "block";
+    } else {
+        miBoton.style.display = "none";
     }
-/* MENU --------------*/
-function abrirMenu() {
-  var x = document.getElementById("miNav");
-  if (x.className === "header-navegacion--menu") {
-      x.className += " responsive";
-  }else{
-        x.className = "header-navegacion--menu";
-  }
-
 }
-function cerrarMenu(){
-    var x = document.getElementById("miNav");	
-   x.className = "header-navegacion--menu";
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+/* MENU --------------*/
+let navStatus = false;
+
+function menuDesplegable() {
+
+    const getNav = document.querySelector("#miNav");
+    const getScreen = screen.width;
+
+    if (navStatus === false) {
+        getNav.style.visibility = "visible"
+        navStatus = true;
+    } else if (navStatus === true && getScreen <= 712) {
+
+        getNav.style.visibility = "hidden"
+        navStatus = false;
+    }
+
 }
