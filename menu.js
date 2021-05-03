@@ -19,11 +19,12 @@ let navStatus = false;
 function menuDesplegable() {
 
     const getNav = document.querySelector("#miNav");
+    const getScreen = screen.width;
 
     if (navStatus === false) {
         getNav.style.visibility = "visible"
         navStatus = true;
-    } else if (navStatus === true) {
+    } else if (navStatus === true && getScreen <= 712) {
 
         getNav.style.visibility = "hidden"
         navStatus = false;
