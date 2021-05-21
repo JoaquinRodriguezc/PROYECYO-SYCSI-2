@@ -664,6 +664,64 @@ address {
 }
 
 
+/* ---------CURSOS---------------*/
+
+.cursos--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.cursos-articulos {
+    width: 90%;
+    margin: 10px auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+    border: 5px solid var(--sycsi);
+    border-radius: 20px;
+}
+
+.curso--texto h3 {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.curso--texto h4 {
+    font-family: "Roboto", sans-serif;
+    color: var(--sycsi);
+}
+
+.curso--texto .texto {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.curso--texto .texto p,
+.curso--texto .texto li {
+    margin: 20px 0;
+    color: #777777;
+    font-size: 1.2em;
+}
+
+.curso--imagen {
+    width: 100%;
+    height: 40vh;
+    background-image: url("../img/background-seccion-nosotros.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 /*--------FOOTER--------------------*/
 
 .footer--container {
