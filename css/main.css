@@ -81,7 +81,7 @@ body {
     visibility: hidden;
     width: 32px;
     height: 32px;
-    background: url("../img/menu-icon.svg");
+    background: url("../img/icons/menu-icon.svg");
     background-position: center;
     background-position: no-repeat;
     background-size: cover;
@@ -126,7 +126,7 @@ body {
     bottom: 20px;
     right: 20px;
     z-index: 99;
-    background: white url("../img/up-arrow1.svg");
+    background: white url("../img/icons/up-arrow1.svg");
     background-position: center;
     background-position: no-repeat;
     background-size: cover;
@@ -346,15 +346,56 @@ main {
 .tarjeta--imagen {
     min-width: 50%;
     min-height: 400px;
-    background-image: url("../img/background-seccion-politica.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.hys>.tarjeta--imagen {
+    background-image: url("../img/servicios/imagen--higiene.jpg");
+}
+
+.ambiental>.tarjeta--imagen {
+    background-image: url("../img/servicios/imagen--ambientales1.jpg");
+}
+
+.medicina>.tarjeta--imagen {
+    background-image: url("../img/servicios/imagen--medicina1.jpg");
+}
+
+.capacitaciones>.tarjeta--imagen {
+    background-image: url("../img/servicios/imagen-capacitaciones.jpg");
+}
+
+.especificos>.tarjeta--imagen {
+    background-image: url("../img/servicios/background-seccion-politica.jpg");
+}
+
+.especiales>.tarjeta--imagen {
+    background-image: url("../img/servicios/imagen--personal.jpg");
+}
+
+.gestion>.tarjeta--imagen {
+    background-image: url("../img/servicios/background-seccion-politica.jpg");
+}
+
+.rentals>.tarjeta--imagen {
+    background-image: url("../img/servicios/imagen--rentals.jpg");
+}
+
 .tarjeta--texto {
     min-width: 50%;
     padding: 0 50px;
+}
+
+.tarjeta--texto>span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/icons/icon-list.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -10px;
 }
 
 .servicios-card ul {
@@ -363,6 +404,7 @@ main {
 }
 
 .servicios-card h3 {
+    display: inline-block;
     margin-bottom: 10px;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
@@ -377,7 +419,7 @@ main {
 }
 
 .servicios-card li:not(li>ul>li) {
-    list-style-image: url("../img/right-arrow.svg");
+    list-style-image: url("../img/icons/right-arrow.svg");
 }
 
 .servicios-card li>ul>li {
@@ -440,49 +482,49 @@ main {
 .clientes--grilla .vale {
     width: 116px;
     height: 50px;
-    background: url("../img/Vale_logo.svg") no-repeat center;
+    background: url("../img/clients/Vale_logo.svg") no-repeat center;
     background-size: cover;
 }
 
 .clientes--grilla .sodexo {
     width: 180px;
     height: 50px;
-    background: url("../img/sodexo.png") no-repeat center;
+    background: url("../img/clients/sodexo.png") no-repeat center;
     background-size: cover;
 }
 
 .clientes--grilla .iron {
     width: 180px;
     height: 35px;
-    background: url("../img/logo-irongroup.png") no-repeat center;
+    background: url("../img/clients/logo-irongroup.png") no-repeat center;
     background-size: cover;
 }
 
 .clientes--grilla .jumbo {
     width: 150px;
     height: 85px;
-    background: url("../img/jumbo-logo-preload.png") no-repeat center;
+    background: url("../img/clients/jumbo-logo-preload.png") no-repeat center;
     background-size: cover;
 }
 
 .clientes--grilla .diesel {
     width: 200px;
     height: 40px;
-    background: url("../img/logo_dieselService.svg") no-repeat center;
+    background: url("../imgclients/clients/logo_dieselService.svg") no-repeat center;
     background-size: cover;
 }
 
 .clientes--grilla .della {
     width: 170px;
     height: 40px;
-    background: url("../img/dellatoffola.png") no-repeat center;
+    background: url("../img/clients/dellatoffola.png") no-repeat center;
     background-size: cover;
 }
 
 .clientes--grilla .g4s {
     width: 100px;
     height: 50px;
-    background: url("../img/g4s-logo.png") no-repeat center;
+    background: url("../img/clients/g4s-logo.png") no-repeat center;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.2);
     background-blend-mode: darken;
@@ -491,7 +533,7 @@ main {
 .clientes--grilla .linde {
     width: 100px;
     height: 50px;
-    background: url("../img/Linde_plc.jpg") no-repeat center;
+    background: url("../img/clients/Linde_plc.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -552,6 +594,10 @@ main {
 
 /*--------------------CONTACTO CONTAINER----------------*/
 
+address {
+    font-style: normal;
+}
+
 .contacto--container-bg {
     width: 100%;
     background-color: var(--sycsi);
@@ -584,7 +630,7 @@ main {
     width: 50px;
     height: 50px;
     margin-left: 10px;
-    background: url("../img/linkedin.svg") no-repeat center;
+    background: url("../img/icons/linkedin.svg") no-repeat center;
     background-size: cover;
     vertical-align: middle;
     cursor: pointer;
@@ -595,7 +641,7 @@ main {
     width: 50px;
     height: 50px;
     margin-left: 10px;
-    background: url("../img/facebook.svg") no-repeat center;
+    background: url("../img/icons/facebook.svg") no-repeat center;
     background-size: cover;
     vertical-align: middle;
     cursor: pointer;
@@ -615,6 +661,64 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+
+/* ---------CURSOS---------------*/
+
+.cursos--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.cursos-articulos {
+    width: 90%;
+    margin: 10px auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+    border: 5px solid var(--sycsi);
+    border-radius: 20px;
+}
+
+.curso--texto h3 {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.curso--texto h4 {
+    font-family: "Roboto", sans-serif;
+    color: var(--sycsi);
+}
+
+.curso--texto .texto {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.curso--texto .texto p,
+.curso--texto .texto li {
+    margin: 20px 0;
+    color: #777777;
+    font-size: 1.2em;
+}
+
+.curso--imagen {
+    width: 100%;
+    height: 40vh;
+    background-image: url("../img/background-seccion-nosotros.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
