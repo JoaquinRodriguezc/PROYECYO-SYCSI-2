@@ -674,7 +674,7 @@ address {
     flex-direction: row;
     margin: 0 auto;
     background-color: white;
-    justify-content: start;
+    justify-content: center;
 }
 
 .cursos-articulos {
@@ -691,6 +691,7 @@ address {
     border-radius: 15px; */
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
     transition: width 0.4s, height 0.4s;
+    border: 1px solid rgba(0, 0, 0, 0.1)
 }
 
 .cursos-articulos:hover {
@@ -742,25 +743,48 @@ address {
 
 .curso--container {
     width: 80%;
-    height: 100vh;
+    display: grid;
+    gap: 10px;
+    min-height: 120vh;
+    grid-template-columns: 60% 40%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     text-align: start;
+    margin-bottom: 30px;
 }
 
-.curso-texto h4 {
+.curso--texto h4 {
+    font-family: "PT Sans Narrow", arial;
     color: var(--sycsi);
     margin: 10px 0;
     font-size: 1.9em;
 }
 
-.curso-texto p,
-.curso-texto li {
+.curso--texto p,
+.curso--texto li {
     color: #777777;
     margin: 10px 20px 0;
-    font-weight: bold;
+    font-weight: 500;
+}
+
+.curso--texto li {
+    list-style-type: disc;
+}
+
+.columna2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+
+.curso--imagen {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url("../img/cursos-preview.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-self: flex-start;
 }
 
 
