@@ -69,7 +69,6 @@ body {
     background-color: white;
     border: 2px solid white;
     border-radius: 4px;
-    /*ver*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
@@ -163,7 +162,7 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #fe9f2f 0, #fc8f28 16.67%, #f57a1e 33.33%, #ea5f11 50%, #de4107 66.67%, #d61c0a 83.33%, #d00012 100%);
+    background-image: linear-gradient(to right, #fe9f2f 0, #fc8f28 16.67%, #f57a1e 33.33%, #ea5f11 50%, #de4107 66.67%, #d61c0a 83.33%, #d00012 100%);
 }
 
 .inicio-texto--container {
@@ -368,7 +367,7 @@ main {
 }
 
 .especificos>.tarjeta--imagen {
-    background-image: url("../img/servicios/background-seccion-politica.jpg");
+    background-image: url("../img/servicios/imagen--específicos.jpg");
 }
 
 .especiales>.tarjeta--imagen {
@@ -376,7 +375,7 @@ main {
 }
 
 .gestion>.tarjeta--imagen {
-    background-image: url("../img/servicios/background-seccion-politica.jpg");
+    background-image: url("../img/servicios/imagen--gestion.jpg");
 }
 
 .rentals>.tarjeta--imagen {
@@ -524,6 +523,13 @@ main {
     background-size: cover;
 }
 
+.clientes--grilla .praxair {
+    width: 200px;
+    height: 30px;
+    background: url("../img/clients/praixar-logo.png") no-repeat center;
+    background-size: cover;
+}
+
 
 /*-------------POLITICA SECCION-------------------*/
 
@@ -588,7 +594,7 @@ address {
 
 .contacto--container-bg {
     width: 100%;
-    background-color: var(--sycsi);
+    background-image: linear-gradient(to right, #fe9f2f 0, #fc8f28 16.67%, #f57a1e 33.33%, #ea5f11 50%, #de4107 66.67%, #d61c0a 83.33%, #d00012 100%);
 }
 
 .contacto--container {
@@ -700,7 +706,17 @@ address {
     top: 20%;
     width: 100%;
     height: 60%;
-    background-image: url("../img/cursos-preview.jpg");
+}
+
+.aMedida {
+    background-image: url("../img/curso--amedida.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.investigacion {
+    background-image: url("../img/Formacion.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -767,7 +783,7 @@ address {
     width: 100%;
     height: 300px;
     margin: 0 auto;
-    background-image: url("../img/cursos-preview.jpg");
+    background-image: url("../img/Formacion.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
